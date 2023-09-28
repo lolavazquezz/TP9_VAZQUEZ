@@ -1,0 +1,21 @@
+<form action='@Url.Action("crearUsuario")' method="post">
+    <input type="text" name="username" placehnolder="Elija un nombre de usuario" required>
+    <input type="password" name="contraseña" placehnolder="Cree una contraseña" onkeyup="validarContraseña()" required>
+    <p>La contraseña debe tener por lo menos:</p>
+    <p>1 carácter especial</p>
+    <p>1 letra en mayúscula</p>
+    <p>8 caracteres</p>
+    <input type="password" name="contraseña" placehnolder="Repita la contraseña" required>
+    <input type="text" name="nombre" placehnolder="Nombre" required>
+    <input type="text" name="email" placehnolder="Email" required>
+    <input type="text" name="telefono" placehnolder="Número de teléfono" required>
+    <p>Responda una pregunta que se le preguntará en caso de que olvide su contraseña</p>
+    <select name="pregunta">
+        <option>Cuál es tu color favorito?</option>
+        <option>Cómo se llama tu mascota?</option>
+        <option>En qué barrio naciste?</option>
+        <option>Cuál es tu comida favorita?</option>
+    </select>
+    <input type="password" name="respuesta" placehnolder="Ingrese aquí la respuesta" required>
+    <input type="submit" value="Registrarme">
+</form>
