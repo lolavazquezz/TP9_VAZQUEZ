@@ -22,13 +22,24 @@ public class AccountController : Controller
     public IActionResult registrarse(){
         return View();
     }
-    public IActionResult crearUsuario(string username, string contraseña, string nombre, string email, int telefono, string pregunta, string respuesta){
-        bd.crearUsuario(username, contraseña, nombre, email, telefono, pregunta, respuesta);
-        ViewBag.username = username;
-        ViewBag.nombre = nombre;
-        ViewBag.email = emial;
-        ViewBag.telefono = telefono;
-        return View("bienvenido");
+    public IActionResult crearUsuario(usuario usu){
+        ViewBag.error = "";
+        if (contraseña1!= contraseña2){
+            ViewBag.error = "Verifique que las dos contraseñas sean iguales";
+        }
+        bool existe = bd.existe(username);
+        if (existe) {
+            ViewBag.error = "El nombre de usuario ya existe. Ingrese uno nuevo."
+        }
+        else {
+            bd.crearUsuario(usu);
+            ViewBag.username = username;
+            ViewBag.nombre = nombre;
+            ViewBag.email = emial;
+            ViewBag.telefono = telefono;
+            return View("bienvenido");
+        }
+        return View("registrarse", usu);
     }
     public IActionResult olvideContra(){
         return View();

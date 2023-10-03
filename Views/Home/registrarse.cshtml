@@ -4,8 +4,8 @@
     <p>La contraseña debe tener por lo menos:</p>
     <p>1 carácter especial</p>
     <p>1 letra en mayúscula</p>
-    <p>8 caracteres</p>
-    <input type="password" name="contraseña" placehnolder="Repita la contraseña" required>
+    <p>8 caracteres y un máximo de 20 caracteres</p>
+    <input type="password" name="contraseña2" placehnolder="Repita la contraseña" required>
     <input type="text" name="nombre" placehnolder="Nombre" required>
     <input type="text" name="email" placehnolder="Email" required>
     <input type="text" name="telefono" placehnolder="Número de teléfono" required>
@@ -19,3 +19,5 @@
     <input type="password" name="respuesta" placehnolder="Ingrese aquí la respuesta" required>
     <input type="submit" value="Registrarme">
 </form>
+@ViewBag.error
+//desabilidar el submit
