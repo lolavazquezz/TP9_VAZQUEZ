@@ -1,0 +1,24 @@
+<form action='@Url.Action("crearUsuario","Account")' method="post">
+    <input type="text" name="username" placeholder="Elija un nombre de usuario" required>
+    <input type="password" name="contraseña" id="contraseña" placeholder="Cree una contraseña" onkeyup="validarContraseña()" required>
+    <p>La contraseña debe tener por lo menos:</p>
+    <span style="color:red" id="m1">1 carácter especial</span>
+    <br><span style="color:red" id="m2">1 letra en mayúscula</span>
+    <br><span style="color:red" id="m3">8 caracteres y un máximo de 20 caracteres</span>
+    <input type="password" name="contraseña2" placeholder="Repita la contraseña" required>
+    <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+    <input type="text" name="email" placeholder="Ingrese un mail" required>
+    <input type="text" name="telefono" placeholder="Ingrese su número de teléfono" required>
+    <p>Responda una pregunta que se le preguntará en caso de que olvide su contraseña</p>
+    <select name="pregunta">
+        <option>Cuál es tu color favorito?</option>
+        <option>Cómo se llama tu mascota?</option>
+        <option>En qué barrio naciste?</option>
+        <option>Cuál es tu comida favorita?</option>
+    </select>
+    <input type="password" name="respuesta" placeholder="Ingrese aquí la respuesta" required>
+    <input type="submit" value="Registrarme">
+</form>
+@ViewBag.error1
+@ViewBag.error2
+@ViewBag.error3

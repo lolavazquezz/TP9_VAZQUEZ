@@ -16,28 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = Z:\2023\PROGRAMACION\TP9_VAZQUEZ
 build_property._RazorSourceGeneratorDebug = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/bienvenido.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxiaWVudmVuaWRvLmNzaHRtbA==
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Account/bienvenido.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxiaWVudmVuaWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Account/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/mostrarContra.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxtb3N0cmFyQ29udHJhLmNzaHRtbA==
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Account/mostrarContra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxtb3N0cmFyQ29udHJhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/registrarse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWdpc3RyYXJzZS5jc2h0bWw=
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Account/registrarse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxyZWdpc3RyYXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/traerContra.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0cmFlckNvbnRyYS5jc2h0bWw=
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Account/traerContra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFx0cmFlckNvbnRyYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/traerPregunta.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0cmFlclByZWd1bnRhLmNzaHRtbA==
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Account/traerPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFx0cmFlclByZWd1bnRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Shared/Error.cshtml]

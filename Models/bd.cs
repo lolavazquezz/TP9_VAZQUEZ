@@ -3,7 +3,7 @@ using Dapper;
 namespace TP9_VAZQUEZ.Models;
 
 public static class bd{
-    private static string ConnectionString { get; set; } = @"Server=localhost;DataBase=EjemploLogin;Trusted_Connection=True;";
+    private static string ConnectionString { get; set; } = @"Server=localhost;DataBase=Usuario;Trusted_Connection=True;";
     public static usuario login(string username, string contraseña)
     {
         usuario user = null;

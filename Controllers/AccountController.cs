@@ -6,6 +6,9 @@ namespace TP9_VAZQUEZ.Controllers;
 
 public class AccountController : Controller
 {
+    public IActionResult index(){
+        return View();
+    }
     public IActionResult login(string username, string contraseña)
     {
         usuario user = bd.login(username, contraseña);
@@ -15,22 +18,30 @@ public class AccountController : Controller
         }
         else
         {
-            ViewBag.usuario = user;
+            ViewBag.username = user.username;
+            ViewBag.nombre = user.nombre;
+            ViewBag.email = user.email;
+            ViewBag.telefono = user.telefono;
             return View("bienvenido");
         }
     }
+    public IActionResult registrarse(){
+        return View();
+    }
     public IActionResult crearUsuario(usuario usu){
-        ViewBag.error = "";
+        ViewBag.error1 = "";
+        ViewBag.error2 = "";
+        ViewBag.error3 = "";
         if (usu.contraseña!= usu.contraseña2){
-            ViewBag.error = "Verifique que las dos contraseñas sean iguales";
+            ViewBag.error1 = "Verifique que las dos contraseñas sean iguales";
         }
         bool existe = bd.existe(usu.username);
         if (existe) {
-            ViewBag.error = "El nombre de usuario ya existe. Ingrese uno nuevo.";
+            ViewBag.error2 = "El nombre de usuario ya existe. Ingrese uno nuevo.";
         }
         bool existem = bd.existeMail(usu.email);
         if (existem) {
-            ViewBag.error = "El email ya esta registrado en una cuenta. Ingrese uno nuevo.";
+            ViewBag.error3 = "El email ya esta registrado en una cuenta. Ingrese uno nuevo.";
         }
         else {
             bd.crearUsuario(usu);

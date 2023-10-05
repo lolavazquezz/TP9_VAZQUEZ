@@ -9,6 +9,7 @@ public class usuario {
     public string pregunta{get; set;}
     public string respuesta{get; set;}
 
+    public usuario(){}
     public usuario(int id, string un, string contra, string nom, string mail, int tel, string preg, string resp){
         idUsuario = id;
         username = un;

@@ -1,0 +1,8 @@
+<form action='@Url.Action("login","Account")' method="post">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="contraseña" placeholder="Contraseña" required>
+    <input type="submit" value="Continuar">
+</form>
+<br><a href='@Url.Action("registrarse","Account")'>Registrarse</a>
+<br><a href='@Url.Action("traerPregunta","Account")'>Olvide mi contraseña</a>
+@ViewBag.mensajeError
