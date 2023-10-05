@@ -9,37 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP9_VAZQUEZ
 build_property.RootNamespace = TP9_VAZQUEZ
-build_property.ProjectDir = Z:\2023\PROGRAMACION\TP9_VAZQUEZ\TP9_VAZQUEZ\
+build_property.ProjectDir = Z:\2023\PROGRAMACION\TP9_VAZQUEZ\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = Z:\2023\PROGRAMACION\TP9_VAZQUEZ\TP9_VAZQUEZ
+build_property.MSBuildProjectDirectory = Z:\2023\PROGRAMACION\TP9_VAZQUEZ
 build_property._RazorSourceGeneratorDebug = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/TP9_VAZQUEZ/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/bienvenido.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxiaWVudmVuaWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/TP9_VAZQUEZ/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/TP9_VAZQUEZ/Views/Shared/Error.cshtml]
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/mostrarContra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxtb3N0cmFyQ29udHJhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/registrarse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWdpc3RyYXJzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/traerContra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0cmFlckNvbnRyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Home/traerPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0cmFlclByZWd1bnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/TP9_VAZQUEZ/Views/Shared/_ValidationScriptsPartial.cshtml]
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/TP9_VAZQUEZ/Views/_ViewImports.cshtml]
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/TP9_VAZQUEZ/Views/_ViewStart.cshtml]
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/TP9_VAZQUEZ/Views/Shared/_Layout.cshtml]
+[Z:/2023/PROGRAMACION/TP9_VAZQUEZ/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-35c17k4jyf

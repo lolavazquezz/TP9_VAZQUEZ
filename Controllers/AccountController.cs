@@ -19,39 +19,36 @@ public class AccountController : Controller
             return View("bienvenido");
         }
     }
-    public IActionResult registrarse(){
-        return View();
-    }
     public IActionResult crearUsuario(usuario usu){
         ViewBag.error = "";
-        if (contraseña1!= contraseña2){
+        if (usu.contraseña!= usu.contraseña2){
             ViewBag.error = "Verifique que las dos contraseñas sean iguales";
         }
-        bool existe = bd.existe(username);
+        bool existe = bd.existe(usu.username);
         if (existe) {
-            ViewBag.error = "El nombre de usuario ya existe. Ingrese uno nuevo."
+            ViewBag.error = "El nombre de usuario ya existe. Ingrese uno nuevo.";
+        }
+        bool existem = bd.existeMail(usu.email);
+        if (existem) {
+            ViewBag.error = "El email ya esta registrado en una cuenta. Ingrese uno nuevo.";
         }
         else {
             bd.crearUsuario(usu);
-            ViewBag.username = username;
-            ViewBag.nombre = nombre;
-            ViewBag.email = emial;
-            ViewBag.telefono = telefono;
+            ViewBag.username = usu.username;
+            ViewBag.nombre = usu.nombre;
+            ViewBag.email = usu.email;
+            ViewBag.telefono = usu.telefono;
             return View("bienvenido");
         }
         return View("registrarse", usu);
     }
-    public IActionResult olvideContra(){
-        return View();
-    }
     public IActionResult traerPregunta(string email){
         ViewBag.pregunta = bd.traerPregunta(email);
-        return View();
+        return View("traerContra");
     }
     public IActionResult traerContra(string email, string respuesta){
         string contraseña = bd.traerContra(email, respuesta);
         ViewBag.contraseña = contraseña;
-        return View();
+        return View("mostrarContra");
     }
-    //hacer uno de traer la contra que lleve el mail y la rta TERMINAR TRAER PREG Y CONTRA EN LA VIEW OLVIDE CONTRA
 }

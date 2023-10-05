@@ -1,6 +1,8 @@
 ﻿function validarContraseña(contraseña){
-    if (contraseña.length < 7 || contraseña.length > 21) return false;
-    if (!/[A-Z]/.test(contraseña)) return false;
-    if (!/[\W_]/.test(contraseña)) return false;
-    //enviar por DOM un mensjae de que no es correcta y 
+    let mensaje = document.getElementById("mensaje");
+    let m = "";
+    if ((contraseña.length < 7 || contraseña.length > 21) || (!/[A-Z]/.test(contraseña))|| (!/[\W_]/.test(contraseña)))
+     m = "La contraseña no cumple con los requisitos"
+    else m = "La contraseña cumple con los requisitos"
+    mensaje.innerHTML = m;
 }
