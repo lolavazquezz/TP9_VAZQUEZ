@@ -32,18 +32,18 @@ public class AccountController : Controller
         ViewBag.error1 = "";
         ViewBag.error2 = "";
         ViewBag.error3 = "";
-        if (usu.contraseña!= usu.contraseña2){
-            ViewBag.error1 = "Verifique que las dos contraseñas sean iguales";
+        if (usu.contraseña != usu.contraseña2){
+            ViewBag.error1 = "Verifique que las dos contraseñas sean iguales"+"<br>";
         }
         bool existe = bd.existe(usu.username);
         if (existe) {
-            ViewBag.error2 = "El nombre de usuario ya existe. Ingrese uno nuevo.";
+            ViewBag.error2 = "El nombre de usuario ya existe, ingrese uno nuevo."+"<br>";
         }
         bool existem = bd.existeMail(usu.email);
         if (existem) {
-            ViewBag.error3 = "El email ya esta registrado en una cuenta. Ingrese uno nuevo.";
+            ViewBag.error3 = "El email ya esta registrado en una cuenta, ingrese uno nuevo."+"<br>";
         }
-        else {
+        else if ((!existe)&&(!existem)&&(ViewBag.error1 == "")) {
             bd.crearUsuario(usu);
             ViewBag.username = usu.username;
             ViewBag.nombre = usu.nombre;

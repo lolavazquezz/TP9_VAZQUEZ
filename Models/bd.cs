@@ -9,7 +9,7 @@ public static class bd{
         usuario user = null;
         using (SqlConnection db = new SqlConnection(ConnectionString))
         {
-            string sql = "SELECT * FROM Usuario WHERE username = @pusername AND contraseña= @pcontra";
+            string sql = "SELECT * FROM Usuario WHERE username = @pusername AND contraseña = @pcontra";
             user = db.QueryFirstOrDefault<usuario>(sql, new { pusername = username, pcontra = contraseña });
         }
         return user;
