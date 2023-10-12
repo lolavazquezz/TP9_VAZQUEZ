@@ -30,12 +30,22 @@ public static class bd{
         }
         return pregunta;
     }
-    public static string traerContra(string email, string respuesta){
+    public static bool validarRta(string respuesta){
+        int cant=0;
+        using (SqlConnection db = new SqlConnection(ConnectionString))
+        {
+            string sql = "SELECT COUNT(*) FROM Usuario WHERE respuesta = @prespuesta";
+            cant = db.QueryFirstOrDefault<int>(sql, new { prespuesta = respuesta});
+        }
+        if (cant > 0) return true;
+        else return false;
+    }
+    public static string traerContra(string email){
         string contra = "";
         using (SqlConnection db = new SqlConnection(ConnectionString))
         {
-            string sql = "SELECT contraseña FROM Usuario WHERE email = @puemail AND respuesta= @prespuesta";
-            contra = db.QueryFirstOrDefault<string>(sql, new { puemail = email, prespuesta = respuesta });
+            string sql = "SELECT contraseña FROM Usuario WHERE email = @puemail";
+            contra = db.QueryFirstOrDefault<string>(sql, new { puemail = email});
         }
         return contra;
     }

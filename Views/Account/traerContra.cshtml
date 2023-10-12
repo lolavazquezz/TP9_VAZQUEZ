@@ -1,4 +1,7 @@
 <form action='@Url.Action("traerContra","Account")' method="post">
-    <input type="text" name="respuesta" placeholder="@ViewBag.pregunta" required>
+    <input type="password" name="respuesta" placeholder="@ViewBag.pregunta" required>
     <input type="submit" value="Continuar">
+    <input type="hidden" name="email" value="@ViewBag.email"/>
+    <input type="hidden" name="pregunta" value="@ViewBag.pregunta"/>
 </form>
+<br>@ViewBag.validar

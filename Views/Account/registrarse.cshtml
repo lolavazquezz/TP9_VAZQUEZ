@@ -1,4 +1,4 @@
-<form action='@Url.Action("crearUsuario","Account")' method="post">//onsubmit return true o flaso si queres que se mande o no el form
+<form action='@Url.Action("crearUsuario","Account")' method="post" onsubmit="return validarContraseña()">
     <input type="text" name="username" placeholder="Elija un nombre de usuario" required>
     <br><input type="password" name="contraseña" id="contraseña" placeholder="Cree una contraseña" onkeyup="validarContraseña()" required>
     <input type="password" name="contraseña2" placeholder="Repita la contraseña" required>
@@ -20,6 +20,6 @@
 
     <br><input type="submit" value="Registrarme">
 </form>
-@ViewBag.error1
-@ViewBag.error2
-@ViewBag.error3
+<br>@ViewBag.error1
+<br>@ViewBag.error2
+<br>@ViewBag.error3
